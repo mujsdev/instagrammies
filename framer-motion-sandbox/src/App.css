@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+  display: flex;
+}
+.container__button {
+  width: 50%;
+  background-color: #a04163;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__card {
+  width: 50%;
+  background-color: #27272b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stagger-container {
+  height: 100vh;
+  background-color: #fad161;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

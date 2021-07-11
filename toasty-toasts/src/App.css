@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #27272b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f8f8f8;
+}
+
+.App-grid {
+  margin-top: 2em;
+  width: calc(300px + 2vmin);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.App-link {
+  color: #f8f8f8;
+
+  font-family: "DM Serif Display", Georgia, Garamond;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.App-link--info {
+  background-color: #3333ff;
+}
+
+.App-link--success {
+  color: #27272b;
+  background-color: #7afad4;
+}
+
+.App-link--warn {
+  color: #27272b;
+  background-color: #fad161;
+}
+
+.App-link--err {
+  background-color: #ff005b;
+}
+
+.App-link--dark {
+  background-color: #0f0f1d;
+}

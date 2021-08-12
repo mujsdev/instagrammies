@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/* MAIN THING YOU'RE LOOKING FOR */
+.smooth-effect {
+  width: 19ch;
+  color: #f8f8f8;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Architects Daughter", cursive;
+  border-right: 3px solid;
+
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* IGNORE */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #27272b;
+}

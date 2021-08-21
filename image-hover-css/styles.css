@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: #0b0b13;
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 1em 0 0 0;
+  max-width: 1000px;
+
+  position: relative;
+  display: flex;
+}
+
+.wrapper figure {
+  margin: 0px 1em 0px 0px;
+  width: 48%;
+  max-width: 480px;
+  max-height: 360px;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 50em) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper figure {
+    width: 100%;
+  }
+}
+
+figure img {
+  width: calc(100% + 20px);
+}
+
+figure h2 span {
+  font-weight: 300;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 2em;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+figcaption p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* =========================================================== */
+/* PIYUSH */
+/* =========================================================== */
+.effect-piyush {
+  background: #1b643f;
+}
+
+.effect-piyush img {
+  max-width: none;
+  max-height: inherit;
+  object-fit: cover;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+  backface-visibility: hidden;
+}
+
+.effect-piyush:hover img {
+  opacity: 0.4;
+  transform: translate3d(0, 0, 0);
+}
+
+.effect-piyush h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+.effect-piyush h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+
+  transition: transform 0.35s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.effect-piyush:hover h2::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.effect-piyush p {
+  padding: 1em 0;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(100%, 0, 0);
+}
+
+.effect-piyush:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =========================================================== */
+/* VICTORIA */
+/* =========================================================== */
+.effect-victoria figcaption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(185, 103, 98, 0) 0%, rgba(185, 103, 98, 0.8) 75%);
+  transform: translate3d(0, 50%, 0);
+}
+
+.effect-victoria h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #4d3332;
+  text-align: center;
+  transition: transform 0.35s, color 0.35s;
+  transform: translate3d(0, -50%, 0);
+}
+
+.effect-victoria figcaption::before,
+.effect-victoria p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-victoria p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translate3d(0, 10px, 0);
+}
+
+.effect-victoria:hover h2 {
+  color: #fff;
+}
+
+.effect-victoria:hover figcaption::before,
+.effect-victoria:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =========================================================== */
+/* WEAR MASK LA */
+/* =========================================================== */
+.effect-mask {
+  z-index: auto;
+  overflow: visible;
+  background: #000;
+}
+
+.effect-mask::before,
+.effect-mask h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: opacity 0.35s;
+}
+
+.effect-mask figcaption {
+  z-index: 1;
+}
+
+.effect-mask img {
+  opacity: 1;
+  transition: transform 0.35s;
+  transform: perspective(1000px) translate3d(0, 0, 0);
+}
+
+.effect-mask h2,
+.effect-mask p {
+  background: #fff;
+  color: #2d434e;
+  text-align: center;
+}
+
+.effect-mask h2 {
+  position: relative;
+  margin-top: 2em;
+  padding: 0.25em;
+}
+
+.effect-mask h2::before {
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.effect-mask p {
+  margin-top: 1em;
+  padding: 0.5em;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale3d(0.9, 0.9, 1);
+}
+
+.effect-mask:hover img {
+  transform: perspective(1000px) translate3d(0, 0, 40px);
+}
+
+.effect-mask:hover p {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}

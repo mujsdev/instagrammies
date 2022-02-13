@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- HEADER: LOGO -->
+      <div class="header__logo">
+        <img src="./images/logo.svg" alt="Banana logomark" />
+      </div>
+
+      <!-- HEADER: NAV -->
+      <nav class="header__nav">
+        <a href="#" class="header__nav__menu">
+          <span><i class="material-icons-round">drag_handle</i></span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- NAVIGATION OVERLAY -->
+    <div class="overlay">
+      <a href="#">
+        <span>
+          <i class="material-icons close">close</i>
+        </span>
+      </a>
+
+      <div class="menu">
+        <div class="menu-container">
+          <p class="category">menu</p>
+          <ul>
+            <li>
+              <a href="#" class="header__nav__link"><span>Recipe</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Nutrition</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Meal Plans</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-container">
+          <p class="category">explore</p>
+          <ul>
+            <li>
+              <a href="#" class="header__nav__link"><span>Company</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Team</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Jobs</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-container">
+          <p class="category">legal</p>
+          <ul>
+            <li>
+              <a href="#" class="header__nav__link"><span>Privacy</span></a>
+            </li>
+            <li>
+              <a href="#" class="header__nav__link"><span>Terms</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <!-- LEFT - CONTENT -->
+        <div class="hero-section__content">
+          <div class="line">
+            <span>Organic & Natural</span>
+          </div>
+          <div class="line">
+            <span>everything</span>
+          </div>
+          <p class="hero-animation">
+            Don't judge us by our name. From scratch to finish, we take care of it all. And we deliver too! You're
+            welcome.
+          </p>
+
+          <!-- INPUT + BUTTON -->
+          <div class="hero-animation hero-section__subscribe">
+            <input type="email" placeholder="johndoe@gmail.com" />
+            <button class="text-button" id="cta">Get started <i class="material-icons-round">arrow_forward</i></button>
+          </div>
+        </div>
+
+        <!-- RIGHT - IMAGE -->
+        <div class="hero-section__images">
+          <img src="./images/hero-image.png" alt="hero image 1" class="image" />
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>

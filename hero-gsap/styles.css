@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir";
+  color: #001514;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  line-height: 1;
+}
+
+input[type="email"] {
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid #c6c6c6;
+  outline: none;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #c6c6c6;
+}
+
+input[type="email"]:-ms-input-placeholder {
+  color: #c6c6c6;
+}
+
+input[type="email"]::-ms-input-placeholder {
+  color: #c6c6c6;
+}
+
+input[type="email"]::placeholder {
+  color: #c6c6c6;
+}
+
+input[type="email"]:focus {
+  border-bottom: 1px solid #001514;
+}
+
+.header {
+  padding: 32px 0;
+  margin: 28px 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 144px;
+  height: auto;
+}
+
+.header__nav {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.header__nav > *:not(:last-child) {
+  margin-right: 60px;
+}
+
+.header__nav__menu {
+  font-size: 16px;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section__content {
+  text-align: center;
+}
+
+.hero-section__content .line {
+  width: 905px;
+  height: 106px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section__content .line span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  font-family: "Playfair Display";
+  font-weight: 800;
+  line-height: 5.2rem;
+}
+
+.hero-section__content p {
+  width: 584px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.hero-section__subscribe {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section__subscribe > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.hero-section__images img {
+  padding: 0 150px;
+  margin-top: 40px;
+  width: 100vw;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 1;
+  background-color: #fff;
+  padding: 80px;
+}
+
+.overlay .close {
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.menu {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 20px;
+  overflow-y: scroll;
+  padding-top: 80px;
+}
+
+.menu .menu-container {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.menu .category {
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li a {
+  font-family: "Avenir";
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+.text-button {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-button i {
+  margin-left: 8px;
+  font-size: 26px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("../fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,
+a {
+  line-height: 1.3;
+  font-family: "Montserrat ExtraBold";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+  font-family: "Montserrat Medium";
+}

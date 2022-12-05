@@ -1,0 +1,64 @@
+.btn {
+  padding: 1.6rem 2.4rem;
+  background: transparent;
+  border: none;
+  border-radius: 1.2rem;
+
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: #fad161;
+    color: #27272b;
+  }
+
+  &:focus {
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-color: #faf3ec;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* ============================================================== */
+  /* COLOR VARIANTS */
+  /* ============================================================== */
+  &--black {
+    background-color: #27272b;
+    color: #faf3ec;
+  }
+
+  &--white {
+    background-color: #faf3ec;
+    color: #27272b;
+  }
+
+  /* ============================================================== */
+  /* SIZES VARIANTS */
+  /* ============================================================== */
+  &--sm {
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+
+    font-size: 1.2rem;
+  }
+
+  /* ============================================================== */
+  /* OTHER STATES */
+  /* ============================================================== */
+  &--border {
+    border: 2px solid #fad161;
+  }
+
+  &--loading {
+    opacity: 0.7;
+    cursor: wait;
+  }
+}
